@@ -1,0 +1,27 @@
+
+#container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 75vh;
+    width: 75vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background : red;
+}
+
+.el{
+    flex:1 1 1;
+    background-color: blue;
+    height: 10px;
+    width: 10px;
+
+}
+
+.el:hover{
+    background-color: green;
+}
+
