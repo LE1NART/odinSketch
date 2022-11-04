@@ -9,8 +9,11 @@ function buildDivs(){
         container.removeChild(container.firstChild);
     }
 
-    const size = container.offsetHeight;
-    const elSize = (size/q);
+    const size = container.getBoundingClientRect().bottom-container.getBoundingClientRect().top;
+    //getBoundingClientRect instead of offsetHeight because offsetHeight returns rounded values
+    const elSize = Math.floor((size/q)*100)/100;
+    //floor rounds to smaller number and with *100/100 we get it floored with 2 decimalnumbers
+  
 
     
 
